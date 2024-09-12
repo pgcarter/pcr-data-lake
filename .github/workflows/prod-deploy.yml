@@ -1,0 +1,12 @@
+name: prod deploy
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo 'do uat deploy new env ${GITHUB_REF}'
