@@ -10,4 +10,4 @@ jobs:
     environment: uat
     steps:
       - uses: actions/checkout@v4
-      - run: echo 'do uat deploy'
+      - run: echo 'do uat deploy new env'
